@@ -1,17 +1,588 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sri Maata Degree College - Modern Education Platform</title>
-    <meta name="description" content="Sri Maata Degree College - BCA, BBA, B.Com Programs | VSKU Affiliated | Career-Focused Education in Hospet, Karnataka" />
-    <meta property="og:title" content="Sri Maata Degree College" />
-    <meta property="og:description" content="Modern education platform with career-focused degree programs" />
-    <meta property="og:type" content="website" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sri Maata Degree College - Premium Education with BCA, BBA, B.Com Programs | VSKU Affiliated | Hospet, Karnataka" />
+  <meta name="keywords" content="Sri Maata College, BCA, BBA, B.Com, Hospet, Degree College, VSKU" />
+  <meta name="author" content="Sri Maata Degree College" />
+  <meta property="og:title" content="Sri Maata Degree College - Excellence in Education" />
+  <meta property="og:description" content="Modern education platform with career-focused undergraduate programs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/college-banner.jpg" />
+  <meta name="theme-color" content="#13499F" />
+  
+  <title>Sri Maata Degree College - Excellence in Education</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2313499F'>📚</text></svg>" />
+</head>
+<body>
+  <!-- ==========================================
+       ANNOUNCEMENT BAR
+       ========================================== -->
+  <div class="announce-bar" style="background: linear-gradient(90deg, #13499F 0%, #667eea 100%); padding: 1rem; text-align: center; color: white; font-size: 0.875rem;">
+    <div class="container flex-between flex-wrap gap-2" style="gap: 1rem;">
+      <span>📞 <strong>Call:</strong> +91 9480723649 | +91 8880953688</span>
+      <span>📧 <strong>Email:</strong> smdcollege1112@gmail.com</span>
+      <span>🎓 <strong>VSKU Affiliated | Admission Open 2025-2026</strong></span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <nav class="navbar" style="background: white; padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: none; transition: all 0.3s ease;">
+    <div class="container flex-between">
+      <!-- Logo -->
+      <div class="logo" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.5rem; font-weight: 700; color: #13499F;">
+        <span style="font-size: 2rem;">📚</span>
+        <span>SMD College</span>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="mobile-toggle hide-desktop" style="background: none; border: 2px solid #13499F; padding: 0.5rem 0.75rem; border-radius: 0.375rem; cursor: pointer; display: none;">
+        <span style="display: block; width: 20px; height: 2px; background: #13499F; margin: 4px 0;"></span>
+        <span style="display: block; width: 20px; height: 2px; background: #13499F; margin: 4px 0;"></span>
+        <span style="display: block; width: 20px; height: 2px; background: #13499F; margin: 4px 0;"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <ul class="nav-menu" style="display: flex; list-style: none; gap: 0; align-items: center;">
+        <li><a href="index.html" style="padding: 0.75rem 1.25rem; display: block; color: #13499F; font-weight: 500; transition: 0.3s;">Home</a></li>
+        <li><a href="about.html" style="padding: 0.75rem 1.25rem; display: block; color: #13499F; font-weight: 500; transition: 0.3s;">About</a></li>
+        <li><a href="courses.html" style="padding: 0.75rem 1.25rem; display: block; color: #13499F; font-weight: 500; transition: 0.3s;">Courses</a></li>
+        <li><a href="admissions.html" style="padding: 0.75rem 1.25rem; display: block; color: #13499F; font-weight: 500; transition: 0.3s;">Admissions</a></li>
+        <li><a href="facilities.html" style="padding: 0.75rem 1.25rem; display: block; color: #13499F; font-weight: 500; transition: 0.3s;">Facilities</a></li>
+        <li><a href="campus-life.html" style="padding: 0.75rem 1.25rem; display: block; color: #13499F; font-weight: 500; transition: 0.3s;">Campus Life</a></li>
+        <li><a href="contact.html" style="padding: 0.75rem 1.25rem; display: block; color: #13499F; font-weight: 500; transition: 0.3s;">Contact</a></li>
+        <li style="margin-left: 1rem;">
+          <a href="admissions.html" class="btn btn-primary" style="margin: 0; padding: 0.75rem 1.5rem;">Apply Now</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section style="background: linear-gradient(135deg, rgba(19, 73, 159, 0.05) 0%, rgba(102, 126, 234, 0.05) 100%); position: relative; overflow: hidden; padding: 5rem 1rem;">
+    <!-- Background Gradient Elements -->
+    <div style="position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(19, 73, 159, 0.1) 0%, transparent 70%); border-radius: 50%; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30%; left: -5%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(167, 139, 250, 0.1) 0%, transparent 70%); border-radius: 50%; z-index: 0;"></div>
+
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+        <!-- Left Content -->
+        <div class="scroll-fade-in">
+          <h1 style="color: #13499F; font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1.2; margin-bottom: 1rem;">
+            Excellence in Education, <span class="gradient-text">Your Future Starts Here</span>
+          </h1>
+          <p style="font-size: 1.125rem; color: #4b5563; margin-bottom: 2rem; line-height: 1.8;">
+            Sri Maata Degree College offers career-focused undergraduate programs with a proactive attitude towards education. Join us for academic excellence, smart classrooms, and placement support.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+            <a href="admissions.html" class="btn btn-primary btn-lg" style="text-decoration: none;">
+              <span>🚀</span> Apply Now
+            </a>
+            <a href="#" class="btn btn-secondary btn-lg" style="text-decoration: none;">
+              <span>📄</span> Download Brochure
+            </a>
+          </div>
+
+          <!-- Key Features -->
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+            <div style="padding: 1rem; background: white; border-radius: 0.75rem; border-left: 4px solid #13499F;">
+              <div style="font-weight: 700; color: #13499F; font-size: 1.5rem;">1000+</div>
+              <div style="color: #6b7280; font-size: 0.875rem;">Active Students</div>
+            </div>
+            <div style="padding: 1rem; background: white; border-radius: 0.75rem; border-left: 4px solid #667eea;">
+              <div style="font-weight: 700; color: #667eea; font-size: 1.5rem;">VSKU</div>
+              <div style="color: #6b7280; font-size: 0.875rem;">Affiliated University</div>
+            </div>
+            <div style="padding: 1rem; background: white; border-radius: 0.75rem; border-left: 4px solid #a78bfa;">
+              <div style="font-weight: 700; color: #a78bfa; font-size: 1.5rem;">100%</div>
+              <div style="color: #6b7280; font-size: 0.875rem;">Academic Excellence</div>
+            </div>
+            <div style="padding: 1rem; background: white; border-radius: 0.75rem; border-left: 4px solid #10b981;">
+              <div style="font-weight: 700; color: #10b981; font-size: 1.5rem;">Modern</div>
+              <div style="color: #6b7280; font-size: 0.875rem;">Campus Facilities</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="scroll-fade-in" style="position: relative;">
+          <div style="background: linear-gradient(135deg, #13499F 0%, #667eea 100%); border-radius: 1rem; padding: 2rem; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem; box-shadow: 0 20px 40px rgba(19, 73, 159, 0.2);">
+            🏛️
+          </div>
+          <!-- Floating Cards -->
+          <div style="position: absolute; top: 20px; right: -20px; background: white; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); animation: float 3s ease-in-out infinite;">
+            <div style="font-weight: 700; color: #13499F;">Expert Faculty</div>
+            <div style="font-size: 0.875rem; color: #6b7280;">Experienced Educators</div>
+          </div>
+          <div style="position: absolute; bottom: 20px; left: -20px; background: white; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); animation: float 3s ease-in-out infinite; animation-delay: 0.5s;">
+            <div style="font-weight: 700; color: #667eea;">Smart Labs</div>
+            <div style="font-size: 0.875rem; color: #6b7280;">Modern Infrastructure</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TRUST SECTION
+       ========================================== -->
+  <section class="section-light" style="padding: 4rem 1rem;">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 3rem;">Why Students Trust Sri Maata College</h2>
+      <div class="grid grid-4" style="gap: 2rem;">
+        <div class="card scroll-fade-in text-center" style="padding: 2rem; border: 1px solid #e5e7eb;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">VSKU Affiliated</h3>
+          <p style="font-size: 0.875rem; color: #6b7280;">Recognized by VSKU University with quality assurance in academics</p>
+        </div>
+        <div class="card scroll-fade-in text-center" style="padding: 2rem; border: 1px solid #e5e7eb;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📚</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Academic Excellence</h3>
+          <p style="font-size: 0.875rem; color: #6b7280;">Comprehensive curriculum with focus on practical knowledge</p>
+        </div>
+        <div class="card scroll-fade-in text-center" style="padding: 2rem; border: 1px solid #e5e7eb;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🚀</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Career Focused</h3>
+          <p style="font-size: 0.875rem; color: #6b7280;">Industry-aligned programs with placement support</p>
+        </div>
+        <div class="card scroll-fade-in text-center" style="padding: 2rem; border: 1px solid #e5e7eb;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">⭐</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Student Success</h3>
+          <p style="font-size: 0.875rem; color: #6b7280;">Proven track record of student achievements and growth</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT PREVIEW
+       ========================================== -->
+  <section style="padding: 5rem 1rem;">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+        <div class="scroll-fade-in" style="aspect-ratio: 1; background: linear-gradient(135deg, #667eea 0%, #a78bfa 100%); border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+          🏫
+        </div>
+        <div class="scroll-fade-in">
+          <h2 style="color: #13499F; margin-bottom: 1rem;">About Sri Maata Degree College</h2>
+          <p style="color: #4b5563; line-height: 1.8; margin-bottom: 1.5rem;">
+            Sri Maata Degree College is a pioneer in creating the best academic environment with a proactive attitude and approach to education. Established in 2019 and affiliated to VSKU University, we have emerged as a leading educational institution in the region.
+          </p>
+          <p style="color: #4b5563; line-height: 1.8; margin-bottom: 1.5rem;">
+            Our team of dedicated faculty members, led by an experienced principal, ensures that students not only excel academically but also develop into well-rounded individuals prepared for the challenges of the modern world.
+          </p>
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div style="padding: 1.5rem; background: #f3f4f6; border-radius: 0.75rem; flex: 1;">
+              <div style="font-weight: 700; color: #13499F; margin-bottom: 0.5rem;">Our Mission</div>
+              <p style="font-size: 0.875rem; color: #6b7280;">To provide quality education that empowers students for success</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f3f4f6; border-radius: 0.75rem; flex: 1;">
+              <div style="font-weight: 700; color: #13499F; margin-bottom: 0.5rem;">Our Vision</div>
+              <p style="font-size: 0.875rem; color: #6b7280;">To be a center of excellence in education and student development</p>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-primary" style="text-decoration: none;">Learn More About Us →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       COURSES SECTION
+       ========================================== -->
+  <section class="section-light" style="padding: 5rem 1rem;">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 1rem;">Undergraduate Courses</h2>
+      <p class="text-center" style="color: #6b7280; max-width: 600px; margin: 0 auto 3rem;">Explore our career-focused degree programs designed to prepare students for success in the professional world</p>
+      
+      <div class="grid grid-3" style="gap: 2rem;">
+        <!-- BCA Card -->
+        <div class="card scroll-fade-in hover-lift" style="overflow: hidden;">
+          <div style="background: linear-gradient(135deg, #13499F 0%, #0D2D5F 100%); padding: 2rem; color: white; text-align: center; margin: -2rem -2rem 1.5rem -2rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💻</div>
+            <h3 style="color: white; margin-bottom: 0;">BCA</h3>
+            <p style="color: rgba(255,255,255,0.9); font-size: 0.875rem; margin-bottom: 0;">Bachelor of Computer Application</p>
+          </div>
+          <p style="color: #6b7280; margin-bottom: 1.5rem;">Comprehensive training in software development, web technologies, and IT infrastructure.</p>
+          <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+            <li style="padding: 0.5rem 0; color: #4b5563; font-size: 0.875rem;">✓ 3-Year Full-time Program</li>
+            <li style="padding: 0.5rem 0; color: #4b5563; font-size: 0.875rem;">✓ Industry-Relevant Skills</li>
+            <li style="padding: 0.5rem 0; color: #4b5563; font-size: 0.875rem;">✓ Placement Support</li>
+          </ul>
+          <a href="courses.html#bca" class="btn btn-primary btn-block" style="text-decoration: none;">View Details →</a>
+        </div>
+
+        <!-- BBA Card -->
+        <div class="card scroll-fade-in hover-lift" style="overflow: hidden; animation-delay: 0.1s;">
+          <div style="background: linear-gradient(135deg, #667eea 0%, #5a67d8 100%); padding: 2rem; color: white; text-align: center; margin: -2rem -2rem 1.5rem -2rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📊</div>
+            <h3 style="color: white; margin-bottom: 0;">BBA</h3>
+            <p style="color: rgba(255,255,255,0.9); font-size: 0.875rem; margin-bottom: 0;">Bachelor of Business Administration</p>
+          </div>
+          <p style="color: #6b7280; margin-bottom: 1.5rem;">Develop management and leadership skills for careers in business and entrepreneurship.</p>
+          <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+            <li style="padding: 0.5rem 0; color: #4b5563; font-size: 0.875rem;">✓ 3-Year Full-time Program</li>
+            <li style="padding: 0.5rem 0; color: #4b5563; font-size: 0.875rem;">✓ Management Training</li>
+            <li style="padding: 0.5rem 0; color: #4b5563; font-size: 0.875rem;">✓ Career Counseling</li>
+          </ul>
+          <a href="courses.html#bba" class="btn btn-primary btn-block" style="text-decoration: none;">View Details →</a>
+        </div>
+
+        <!-- B.COM Card -->
+        <div class="card scroll-fade-in hover-lift" style="overflow: hidden; animation-delay: 0.2s;">
+          <div style="background: linear-gradient(135deg, #a78bfa 0%, #9966ff 100%); padding: 2rem; color: white; text-align: center; margin: -2rem -2rem 1.5rem -2rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💼</div>
+            <h3 style="color: white; margin-bottom: 0;">B.COM</h3>
+            <p style="color: rgba(255,255,255,0.9); font-size: 0.875rem; margin-bottom: 0;">Bachelor of Commerce</p>
+          </div>
+          <p style="color: #6b7280; margin-bottom: 1.5rem;">Master commerce, accounting, and finance for a successful career in business.</p>
+          <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+            <li style="padding: 0.5rem 0; color: #4b5563; font-size: 0.875rem;">✓ 3-Year Full-time Program</li>
+            <li style="padding: 0.5rem 0; color: #4b5563; font-size: 0.875rem;">✓ Accounting & Finance</li>
+            <li style="padding: 0.5rem 0; color: #4b5563; font-size: 0.875rem;">✓ Business Law</li>
+          </ul>
+          <a href="courses.html#bcom" class="btn btn-primary btn-block" style="text-decoration: none;">View Details →</a>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="courses.html" class="btn btn-secondary btn-lg" style="text-decoration: none;">Explore All Courses →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WHY CHOOSE US - BENTO GRID
+       ========================================== -->
+  <section style="padding: 5rem 1rem;">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 3rem;">Why Choose Sri Maata College</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <!-- Feature 1 -->
+        <div class="card scroll-fade-in" style="grid-column: span 1;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">👨‍🏫</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;">Experienced Faculty</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Highly qualified and dedicated educators with extensive industry experience</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card scroll-fade-in" style="grid-column: span 1; animation-delay: 0.1s;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🖥️</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;">Smart Classrooms</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Modern teaching facilities with interactive technology and advanced infrastructure</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card scroll-fade-in" style="grid-column: span 1; animation-delay: 0.2s;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">💻</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;">Computer Labs</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Well-equipped labs with latest software and hardware for practical learning</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="card scroll-fade-in" style="grid-column: span 1; animation-delay: 0.3s;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">📖</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;">Central Library</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Comprehensive library with digital resources and study materials</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="card scroll-fade-in" style="grid-column: span 1; animation-delay: 0.4s;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎓</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;">Scholarships</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Merit-based and need-based scholarship opportunities for deserving students</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="card scroll-fade-in" style="grid-column: span 1; animation-delay: 0.5s;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🚀</div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;">Placement Support</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Dedicated placement cell with industry connections for career opportunities</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FACILITIES PREVIEW
+       ========================================== -->
+  <section class="section-light" style="padding: 5rem 1rem;">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 3rem;">Campus Facilities</h2>
+      <div class="grid grid-3" style="gap: 2rem;">
+        <div class="card scroll-fade-in text-center">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏫</div>
+          <h3>Smart Classrooms</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Spacious, well-designed lecture halls with modern teaching aids and comfortable seating</p>
+        </div>
+        <div class="card scroll-fade-in text-center" style="animation-delay: 0.1s;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">💻</div>
+          <h3>Computer Labs</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">State-of-the-art computer labs with latest software for practical training</p>
+        </div>
+        <div class="card scroll-fade-in text-center" style="animation-delay: 0.2s;">
+          <div style="font-size: 2.5rem; margin-bottom: 1rem;">📚</div>
+          <h3>Library</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Computerized library with extensive collection of books and online resources</p>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="facilities.html" class="btn btn-primary" style="text-decoration: none;">View All Facilities →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS
+       ========================================== -->
+  <section style="padding: 5rem 1rem;">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 3rem;">Student Testimonials</h2>
+      
+      <div data-slider-testimonials style="max-width: 800px; margin: 0 auto;">
+        <div data-slide style="text-align: center; padding: 2rem; display: none;">
+          <div style="background: #f3f4f6; padding: 2rem; border-radius: 1rem; margin-bottom: 1.5rem;">
+            <p style="font-style: italic; color: #4b5563; margin-bottom: 0;">
+              "Sri Maata Degree College has provided me with excellent academic foundation and practical skills. The faculty is supportive and the learning environment is inspiring."
+            </p>
+          </div>
+          <div>
+            <div style="font-weight: 700; color: #13499F;">Priya Sharma</div>
+            <div style="color: #6b7280; font-size: 0.875rem;">BCA Graduate</div>
+          </div>
+        </div>
+
+        <div data-slide style="text-align: center; padding: 2rem; display: none;">
+          <div style="background: #f3f4f6; padding: 2rem; border-radius: 1rem; margin-bottom: 1.5rem;">
+            <p style="font-style: italic; color: #4b5563; margin-bottom: 0;">
+              "Very good college with excellent communication between faculty and students. The well-qualified teachers strictly follow the curriculum and make learning engaging."
+            </p>
+          </div>
+          <div>
+            <div style="font-weight: 700; color: #13499F;">Rajesh Kumar</div>
+            <div style="color: #6b7280; font-size: 0.875rem;">BBA Graduate</div>
+          </div>
+        </div>
+
+        <div data-slide style="text-align: center; padding: 2rem; display: none;">
+          <div style="background: #f3f4f6; padding: 2rem; border-radius: 1rem; margin-bottom: 1.5rem;">
+            <p style="font-style: italic; color: #4b5563; margin-bottom: 0;">
+              "Top-quality education and wonderful campus atmosphere. The faculty is experienced and the curriculum is well-structured. It's a great platform for personal growth."
+            </p>
+          </div>
+          <div>
+            <div style="font-weight: 700; color: #13499F;">Anjali Patel</div>
+            <div style="color: #6b7280; font-size: 0.875rem;">B.Com Graduate</div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button data-slider-prev style="background: #f3f4f6; border: none; padding: 0.75rem 1.5rem; margin: 0 0.5rem; border-radius: 0.5rem; cursor: pointer;">← Previous</button>
+          <button data-slider-next style="background: #f3f4f6; border: none; padding: 0.75rem 1.5rem; margin: 0 0.5rem; border-radius: 0.5rem; cursor: pointer;">Next →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ADMISSION PROCESS
+       ========================================== -->
+  <section class="section-light" style="padding: 5rem 1rem;">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 3rem;">Admission Process</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+        <div class="scroll-fade-in" style="text-align: center;">
+          <div style="background: #13499F; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem; font-weight: 700;">1</div>
+          <h3>Fill Application</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Complete the online application form with your details and qualifications</p>
+        </div>
+
+        <div class="scroll-fade-in" style="text-align: center; animation-delay: 0.1s;">
+          <div style="background: #667eea; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem; font-weight: 700;">2</div>
+          <h3>Verify Documents</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Submit required documents for verification and validation</p>
+        </div>
+
+        <div class="scroll-fade-in" style="text-align: center; animation-delay: 0.2s;">
+          <div style="background: #a78bfa; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem; font-weight: 700;">3</div>
+          <h3>Counseling</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Attend admission counseling to discuss course options and requirements</p>
+        </div>
+
+        <div class="scroll-fade-in" style="text-align: center; animation-delay: 0.3s;">
+          <div style="background: #10b981; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem; font-weight: 700;">4</div>
+          <h3>Confirm Admission</h3>
+          <p style="color: #6b7280; font-size: 0.875rem;">Complete admission by submitting fees and necessary documentation</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="admissions.html" class="btn btn-primary btn-lg" style="text-decoration: none;">Start Your Admission →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ SECTION
+       ========================================== -->
+  <section style="padding: 5rem 1rem;">
+    <div class="container max-w-4xl">
+      <h2 class="text-center" style="margin-bottom: 3rem;">Frequently Asked Questions</h2>
+      
+      <div data-faq>
+        <div data-accordion-item style="margin-bottom: 1rem; border: 1px solid #e5e7eb; border-radius: 0.75rem; overflow: hidden;">
+          <button data-accordion-trigger style="width: 100%; padding: 1.5rem; text-align: left; background: white; border: none; cursor: pointer; font-weight: 600; color: #13499F; display: flex; justify-content: space-between; align-items: center; transition: 0.3s;">
+            <span>What is the eligibility criteria for admission?</span>
+            <span style="font-size: 1.25rem;">+</span>
+          </button>
+          <div data-accordion-content style="max-height: 0; overflow: hidden; padding: 0 1.5rem; background: #f9fafb;">
+            <div style="padding-bottom: 1.5rem; color: #6b7280;">
+              <p>For undergraduate programs, you should have completed 12th grade (HSC) from a recognized board. For specific course eligibility and minimum marks requirements, please contact our admission office.</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-accordion-item style="margin-bottom: 1rem; border: 1px solid #e5e7eb; border-radius: 0.75rem; overflow: hidden;">
+          <button data-accordion-trigger style="width: 100%; padding: 1.5rem; text-align: left; background: white; border: none; cursor: pointer; font-weight: 600; color: #13499F; display: flex; justify-content: space-between; align-items: center; transition: 0.3s;">
+            <span>What is the duration of the courses?</span>
+            <span style="font-size: 1.25rem;">+</span>
+          </button>
+          <div data-accordion-content style="max-height: 0; overflow: hidden; padding: 0 1.5rem; background: #f9fafb;">
+            <div style="padding-bottom: 1.5rem; color: #6b7280;">
+              <p>All our undergraduate programs (BCA, BBA, B.Com) are 3-year full-time courses divided into 6 semesters.</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-accordion-item style="margin-bottom: 1rem; border: 1px solid #e5e7eb; border-radius: 0.75rem; overflow: hidden;">
+          <button data-accordion-trigger style="width: 100%; padding: 1.5rem; text-align: left; background: white; border: none; cursor: pointer; font-weight: 600; color: #13499F; display: flex; justify-content: space-between; align-items: center; transition: 0.3s;">
+            <span>Are scholarships available?</span>
+            <span style="font-size: 1.25rem;">+</span>
+          </button>
+          <div data-accordion-content style="max-height: 0; overflow: hidden; padding: 0 1.5rem; background: #f9fafb;">
+            <div style="padding-bottom: 1.5rem; color: #6b7280;">
+              <p>Yes, we offer merit-based and need-based scholarships for deserving students. Details about scholarship criteria and application process are available on our admissions page.</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-accordion-item style="margin-bottom: 1rem; border: 1px solid #e5e7eb; border-radius: 0.75rem; overflow: hidden;">
+          <button data-accordion-trigger style="width: 100%; padding: 1.5rem; text-align: left; background: white; border: none; cursor: pointer; font-weight: 600; color: #13499F; display: flex; justify-content: space-between; align-items: center; transition: 0.3s;">
+            <span>What placement opportunities are available?</span>
+            <span style="font-size: 1.25rem;">+</span>
+          </button>
+          <div data-accordion-content style="max-height: 0; overflow: hidden; padding: 0 1.5rem; background: #f9fafb;">
+            <div style="padding-bottom: 1.5rem; color: #6b7280;">
+              <p>Our dedicated placement cell works with leading companies to provide internship and job opportunities to students. We focus on career development and professional growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="contact.html" class="btn btn-secondary" style="text-decoration: none;">Have More Questions? Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FINAL CTA SECTION
+       ========================================== -->
+  <section style="background: linear-gradient(135deg, #13499F 0%, #0D2D5F 100%); color: white; padding: 5rem 1rem; text-align: center;">
+    <div class="container max-w-2xl">
+      <h2 style="color: white; margin-bottom: 1rem;">Ready to Start Your Journey?</h2>
+      <p style="color: rgba(255,255,255,0.9); font-size: 1.125rem; margin-bottom: 2rem;">Admissions are now open for 2025-2026. Join Sri Maata Degree College and be part of our success story.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="admissions.html" class="btn btn-secondary btn-lg" style="text-decoration: none;">Apply Now</a>
+        <a href="contact.html" class="btn btn-outline" style="text-decoration: none; border-color: white; color: white;">Get More Info</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer style="background: #1f2937; color: white; padding: 4rem 1rem 2rem;">
+    <div class="container">
+      <div class="grid grid-4" style="gap: 2rem; margin-bottom: 3rem;">
+        <!-- About -->
+        <div>
+          <h4 style="color: white; margin-bottom: 1rem;">Sri Maata College</h4>
+          <p style="color: #d1d5db; font-size: 0.875rem; margin-bottom: 0;">Excellence in education and character development since 2019. VSKU Affiliated institution in Hospet.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 style="color: white; margin-bottom: 1rem;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="index.html" style="color: #d1d5db; text-decoration: none; transition: 0.3s;">Home</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="about.html" style="color: #d1d5db; text-decoration: none; transition: 0.3s;">About</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="courses.html" style="color: #d1d5db; text-decoration: none; transition: 0.3s;">Courses</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="admissions.html" style="color: #d1d5db; text-decoration: none; transition: 0.3s;">Admissions</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 style="color: white; margin-bottom: 1rem;">Contact Info</h4>
+          <div style="color: #d1d5db; font-size: 0.875rem; line-height: 1.8;">
+            <p style="margin-bottom: 0.5rem;">📞 +91 9480723649</p>
+            <p style="margin-bottom: 0.5rem;">📞 +91 8880953688</p>
+            <p style="margin-bottom: 0.5rem;">📧 smdcollege1112@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+          <h4 style="color: white; margin-bottom: 1rem;">Follow Us</h4>
+          <div style="display: flex; gap: 1rem;">
+            <a href="https://www.facebook.com/profile.php?id=100063968085320" target="_blank" style="color: #d1d5db; text-decoration: none; font-size: 1.5rem; transition: 0.3s;">👍</a>
+            <a href="#" style="color: #d1d5db; text-decoration: none; font-size: 1.5rem; transition: 0.3s;">🐦</a>
+            <a href="#" style="color: #d1d5db; text-decoration: none; font-size: 1.5rem; transition: 0.3s;">📺</a>
+            <a href="https://wa.me/919480723649" target="_blank" style="color: #d1d5db; text-decoration: none; font-size: 1.5rem; transition: 0.3s;">💬</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 0.75rem; margin-bottom: 2rem;">
+        <p style="color: #9ca3af; font-size: 0.875rem; margin: 0;">
+          <strong>Campus Address:</strong> Besides Siddipriya Kalyana Mantapa, New Amaravati Hosapete, Dam Road, Hosapete, Karnataka 583201
+        </p>
+      </div>
+
+      <!-- Copyright -->
+      <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); color: #9ca3af; font-size: 0.875rem;">
+        <p style="margin-bottom: 0.5rem;">© <span class="current-year">2025</span> Sri Maata Degree College. All rights reserved.</p>
+        <p style="margin-bottom: 0;">Designed and developed with ❤️ for educational excellence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" style="position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; background: linear-gradient(135deg, #13499F 0%, #667eea 100%); color: white; border: none; border-radius: 50%; cursor: pointer; display: none; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 10px 25px rgba(19, 73, 159, 0.3); transition: 0.3s; z-index: 999;">
+    ↑
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/faq.js"></script>
+</body>
 </html>
